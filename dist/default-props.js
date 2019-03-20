@@ -1,8 +1,16 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
 /**
  * Default component props.
  */
-const defaultProps = {
+var defaultProps = {
   height: '250px',
   primaryColor: '#6c63ff'
 };
-export default defaultProps;
+var _default = defaultProps;
+exports.default = _default;

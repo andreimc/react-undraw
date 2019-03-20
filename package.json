@@ -45,7 +45,7 @@
     "prepublishOnly": "npm run lib:build",
     "lib": "npm run lib:clean && npm run lib:build",
     "lib:clean": "rimraf dist",
-    "lib:build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "lib:build": "cross-env BABEL_ENV=cjs NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "format:all": "prettier --write **/*.js",
     "format:illustrations": "prettier --write src/lib/illustrations/*.js"
   },

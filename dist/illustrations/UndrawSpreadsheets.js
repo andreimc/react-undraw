@@ -1,26 +1,37 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _defaultProps = _interopRequireDefault(require("../default-props"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import defaultProps from '../default-props';
-
-const UndrawSpreadsheets = _props => {
-  const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor || defaultProps.primaryColor;
-  const style = Object.assign({
-    height: props.height || defaultProps.height,
+var UndrawSpreadsheets = function UndrawSpreadsheets(_props) {
+  var props = Object.assign({}, _props);
+  var primaryColor = props.primaryColor || _defaultProps.default.primaryColor;
+  var style = Object.assign({
+    height: props.height || _defaultProps.default.height,
     width: '100%'
   }, props.style);
   delete props.primaryColor;
   delete props.height;
   delete props.style;
-  return React.createElement("svg", _extends({
+  return _react.default.createElement("svg", _extends({
     "data-name": "Layer 1",
     width: "1em",
     height: "1em",
     viewBox: "0 0 908.72 593.16",
     style: style
-  }, props), React.createElement("defs", null, React.createElement("linearGradient", {
+  }, props), _react.default.createElement("defs", null, _react.default.createElement("linearGradient", {
     id: "prefix__a",
     x1: 623.41,
     y1: 835.81,
@@ -28,16 +39,16 @@ const UndrawSpreadsheets = _props => {
     y2: 62.24,
     gradientTransform: "rotate(90 606.04 433.22)",
     gradientUnits: "userSpaceOnUse"
-  }, React.createElement("stop", {
+  }, _react.default.createElement("stop", {
     offset: 0,
     stopOpacity: 0.12
-  }), React.createElement("stop", {
+  }), _react.default.createElement("stop", {
     offset: 0.55,
     stopOpacity: 0.09
-  }), React.createElement("stop", {
+  }), _react.default.createElement("stop", {
     offset: 1,
     stopOpacity: 0.02
-  })), React.createElement("linearGradient", {
+  })), _react.default.createElement("linearGradient", {
     id: "prefix__b",
     x1: 600,
     y1: 746.58,
@@ -45,23 +56,23 @@ const UndrawSpreadsheets = _props => {
     y2: 153.42,
     gradientTransform: "rotate(.08 580.425 436.475)",
     gradientUnits: "userSpaceOnUse"
-  }, React.createElement("stop", {
+  }, _react.default.createElement("stop", {
     offset: 0,
     stopColor: "gray",
     stopOpacity: 0.25
-  }), React.createElement("stop", {
+  }), _react.default.createElement("stop", {
     offset: 0.54,
     stopColor: "gray",
     stopOpacity: 0.12
-  }), React.createElement("stop", {
+  }), _react.default.createElement("stop", {
     offset: 1,
     stopColor: "gray",
     stopOpacity: 0.1
-  }))), React.createElement("path", {
+  }))), _react.default.createElement("path", {
     transform: "rotate(-.08 -109386.293 104667.515)",
     fill: "url(#prefix__a)",
     d: "M203.45 183.42h773.57v534.35H203.45z"
-  }), React.createElement("rect", {
+  }), _react.default.createElement("rect", {
     x: 146,
     y: 153.99,
     width: 908,
@@ -71,7 +82,7 @@ const UndrawSpreadsheets = _props => {
     transform: "rotate(-.08 -109371.969 104667.525)",
     fill: "url(#prefix__b)",
     opacity: 0.7
-  }), React.createElement("rect", {
+  }), _react.default.createElement("rect", {
     x: 154.11,
     y: 158.92,
     width: 893.37,
@@ -80,25 +91,25 @@ const UndrawSpreadsheets = _props => {
     ry: 28.33,
     transform: "rotate(-.08 -109371.964 104660.363)",
     fill: "#535461"
-  }), React.createElement("circle", {
+  }), _react.default.createElement("circle", {
     cx: 192.71,
     cy: 452.44,
     r: 20.68,
     transform: "rotate(-.08 -109765.877 104667.25)",
     fill: "#535461"
-  }), React.createElement("circle", {
+  }), _react.default.createElement("circle", {
     cx: 192.71,
     cy: 452.44,
     r: 20.68,
     transform: "rotate(-.08 -109765.877 104667.25)",
     opacity: 0.1
-  }), React.createElement("circle", {
+  }), _react.default.createElement("circle", {
     cx: 1011.51,
     cy: 363.1,
     r: 6.89,
     transform: "rotate(-.08 -108978 104581.856)",
     fill: "#535461"
-  }), React.createElement("rect", {
+  }), _react.default.createElement("rect", {
     x: 1008.86,
     y: 397.57,
     width: 6.89,
@@ -107,7 +118,7 @@ const UndrawSpreadsheets = _props => {
     ry: 1.43,
     transform: "rotate(-.08 -108978.055 104660.638)",
     fill: "#535461"
-  }), React.createElement("rect", {
+  }), _react.default.createElement("rect", {
     x: 1008.86,
     y: 397.57,
     width: 6.89,
@@ -116,45 +127,46 @@ const UndrawSpreadsheets = _props => {
     ry: 1.43,
     transform: "rotate(-.08 -108978.055 104660.638)",
     opacity: 0.1
-  }), React.createElement("circle", {
+  }), _react.default.createElement("circle", {
     cx: 1011.51,
     cy: 363.1,
     r: 6.89,
     transform: "rotate(-.08 -108978 104581.856)",
     opacity: 0.1
-  }), React.createElement("path", {
+  }), _react.default.createElement("path", {
     fill: "#fff",
     d: "M725 547.58H84.37v-498h747.69v430.16l-.43 67.12-106.63.72z"
-  }), React.createElement("path", {
+  }), _react.default.createElement("path", {
     fill: "#e0e0e0",
     d: "M84.37 221.97h747.69v6.86H84.37zM84.37 184.97h747.69v6.86H84.37zM84.37 147.97h747.69v6.86H84.37zM84.37 110.97h747.69v6.86H84.37zM84.37 73.97h747.69v6.86H84.37zM84.37 258.98h747.69v6.86H84.37zM84.37 296h747.69v6.86H84.37zM84.37 333.02h747.69v6.86H84.37zM84.37 370.04h747.69v6.86H84.37zM84.37 407.05h747.69v6.86H84.37zM84.37 444.07h747.69v6.86H84.37zM84.36 481.09h747.57v6.86H84.36zM84.37 518.11h746.99v6.86H84.37z",
     opacity: 0.7
-  }), React.createElement("path", {
+  }), _react.default.createElement("path", {
     fill: "#e0e0e0",
     d: "M174.16 80.8h5.18v466.78h-5.18zM288.56 80.8h5.18v466.78h-5.18zM402.96 80.8h5.18v466.78h-5.18zM517.36 80.8h5.18v466.78h-5.18zM631.76 80.8h5.18v466.78h-5.18zM751.34 547.58h-5.18V80.8l5.18-.22v467z"
-  }), React.createElement("circle", {
+  }), _react.default.createElement("circle", {
     cx: 101.09,
     cy: 61.08,
     r: 6.73,
     fill: "#ff5252"
-  }), React.createElement("circle", {
+  }), _react.default.createElement("circle", {
     cx: 120.36,
     cy: 61.08,
     r: 6.73,
     fill: "#ff0"
-  }), React.createElement("circle", {
+  }), _react.default.createElement("circle", {
     cx: 139.63,
     cy: 61.08,
     r: 6.73,
     fill: "#69f0ae"
-  }), React.createElement("path", {
+  }), _react.default.createElement("path", {
     fill: primaryColor,
     d: "M293.36 339.58h110v30h-110zM408.36 487.58h110v30h-110zM522.36 447.58h110v30h-110zM522.36 228.58h110v30h-110zM637.36 376.58h110v30h-110zM178.36 117.58h110v30h-110zM408.36 192.58h110v30h-110zM178.36 265.58h110v30h-110z"
   }));
 };
 
 UndrawSpreadsheets.propTypes = {
-  height: PropTypes.string,
-  primaryColor: PropTypes.string
+  height: _propTypes.default.string,
+  primaryColor: _propTypes.default.string
 };
-export default UndrawSpreadsheets;
+var _default = UndrawSpreadsheets;
+exports.default = _default;

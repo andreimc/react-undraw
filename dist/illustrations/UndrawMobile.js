@@ -1,50 +1,61 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _defaultProps = _interopRequireDefault(require("../default-props"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import defaultProps from '../default-props';
-
-const UndrawMobile = _props => {
-  const props = Object.assign({}, _props);
-  const primaryColor = props.primaryColor || defaultProps.primaryColor;
-  const style = Object.assign({
-    height: props.height || defaultProps.height,
+var UndrawMobile = function UndrawMobile(_props) {
+  var props = Object.assign({}, _props);
+  var primaryColor = props.primaryColor || _defaultProps.default.primaryColor;
+  var style = Object.assign({
+    height: props.height || _defaultProps.default.height,
     width: '100%'
   }, props.style);
   delete props.primaryColor;
   delete props.height;
   delete props.style;
-  return React.createElement("svg", _extends({
+  return _react.default.createElement("svg", _extends({
     "data-name": "Layer 1",
     width: "1em",
     height: "1em",
     viewBox: "0 0 392.94 715",
     style: style
-  }, props), React.createElement("defs", null, React.createElement("linearGradient", {
+  }, props), _react.default.createElement("defs", null, _react.default.createElement("linearGradient", {
     id: "prefix__a",
     x1: 196.47,
     y1: 715,
     x2: 196.47,
     gradientUnits: "userSpaceOnUse"
-  }, React.createElement("stop", {
+  }, _react.default.createElement("stop", {
     offset: 0.01,
     stopColor: "gray",
     stopOpacity: 0.25
-  }), React.createElement("stop", {
+  }), _react.default.createElement("stop", {
     offset: 0.54,
     stopColor: "gray",
     stopOpacity: 0.12
-  }), React.createElement("stop", {
+  }), _react.default.createElement("stop", {
     offset: 1,
     stopColor: "gray",
     stopOpacity: 0.1
-  }))), React.createElement("rect", {
+  }))), _react.default.createElement("rect", {
     width: 392.94,
     height: 715,
     rx: 24.73,
     ry: 24.73,
     fill: "url(#prefix__a)"
-  }), React.createElement("rect", {
+  }), _react.default.createElement("rect", {
     x: 9.05,
     y: 9.95,
     width: 374.84,
@@ -52,22 +63,22 @@ const UndrawMobile = _props => {
     rx: 24.73,
     ry: 24.73,
     fill: "#fff"
-  }), React.createElement("path", {
+  }), _react.default.createElement("path", {
     fill: primaryColor,
     d: "M51.37 58.61h290.2v560.24H51.37z"
-  }), React.createElement("ellipse", {
+  }), _react.default.createElement("ellipse", {
     cx: 196.47,
     cy: 659.21,
     rx: 23.14,
     ry: 23.74,
     fill: "#dbdbdb"
-  }), React.createElement("ellipse", {
+  }), _react.default.createElement("ellipse", {
     cx: 152.51,
     cy: 32.5,
     rx: 4.63,
     ry: 4.75,
     fill: "#dbdbdb"
-  }), React.createElement("rect", {
+  }), _react.default.createElement("rect", {
     x: 173.33,
     y: 28.94,
     width: 71.73,
@@ -79,7 +90,8 @@ const UndrawMobile = _props => {
 };
 
 UndrawMobile.propTypes = {
-  height: PropTypes.string,
-  primaryColor: PropTypes.string
+  height: _propTypes.default.string,
+  primaryColor: _propTypes.default.string
 };
-export default UndrawMobile;
+var _default = UndrawMobile;
+exports.default = _default;
